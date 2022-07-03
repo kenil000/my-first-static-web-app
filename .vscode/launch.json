@@ -1,6 +1,5 @@
 {
     "configurations": [
-
         {
             "name": "SWA: Run my-first-static-web-app",
             "request": "launch",
@@ -9,6 +8,14 @@
             "preLaunchTask": "swa: start my-first-static-web-app",
             "webRoot": "${workspaceFolder}/",
             "timeout": 30000
+        },
+        {
+            "name": "Attach to Node Functions",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "preLaunchTask": "func: host start"
         }
-    ]
+    ],
+    "version": "0.2.0"
 }
